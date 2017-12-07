@@ -8,8 +8,7 @@ Moreover you have to install [pyModbusTCP](https://github.com/sourceperl/pyModbu
 
 ## Configuration
 
-### plugin.conf###
-yaml
+### plugin.conf
 ```
 dimplexwp:
     class_name: DimplexWP
@@ -18,11 +17,11 @@ dimplexwp:
     wp_port: 502
 ```
 
-#### Attributes####
+#### Attributes
 * `wp_ip` : IP address of the Dimplex heat pump respectivley the NWPM extension
 * `wp_port` : Port number of the NWPM extension for Modbus TCP access (default: 502)
 
-### item.conf###
+### item.conf
 
 To assign information from the heat pump to an item, it has to be type of `num` and must implement one attribute called `wp_modbus_dpt`, which represents the kind of information you want to get from your heat pump. 
 
@@ -61,7 +60,6 @@ Below you can find a list of possible values with which you can get the correspo
 \*More information can be found in the [documentation](http://www.dimplex.de/wiki/index.php/NWPM_Modbus_TCP#Datenpunktliste) of the NWPM extension
 
 ### Example:
-yaml
 ```
     Waermepumpe:
         Aussentemperatur:
