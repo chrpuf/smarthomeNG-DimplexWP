@@ -13,7 +13,7 @@ Moreover you have to install [pyModbusTCP](https://github.com/sourceperl/pyModbu
 dimplexwp:
     class_name: DimplexWP
     class_path: plugins.dimplexwp
-    wp_ip: 192.168.0.4
+    wp_ip: 123.456.789.000
     wp_port: 502
 ```
 
